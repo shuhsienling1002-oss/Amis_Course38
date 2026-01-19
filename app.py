@@ -73,16 +73,16 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# --- 2. 資料庫 (Unit 38: 18個單字 - 時間與天氣) ---
+# --- 2. 資料庫 (Unit 38: 18個單字 - User Fix) ---
 vocab_data = [
     {"amis": "Romi'ad", "chi": "日子 / 天氣 (詞根)", "icon": "📅", "source": "Row 1690", "morph": "Root"},
-    {"amis": "Maromi'ad", "chi": "整天 / 度過一天", "icon": "⏳", "source": "Grammar", "morph": "Ma-Romi'ad"},
+    {"amis": "Masaromi'ad", "chi": "整天 / 度過一天", "icon": "⏳", "source": "User Fix", "morph": "Masa-Romi'ad"}, # 修正
     {"amis": "'Orad", "chi": "雨 (詞根)", "icon": "💧", "source": "Row 3484", "morph": "Root"},
     {"amis": "Ma'orad", "chi": "下雨", "icon": "🌧️", "source": "Standard", "morph": "Ma-'Orad"},
     {"amis": "Cidal", "chi": "太陽 (詞根)", "icon": "☀️", "source": "Standard", "morph": "Root"},
     {"amis": "Macidal", "chi": "出太陽 / 晴天", "icon": "🌤️", "source": "Standard", "morph": "Ma-Cidal"},
     {"amis": "Fali", "chi": "風 (詞根)", "icon": "🍃", "source": "Row 555", "morph": "Root"},
-    {"amis": "Mifali", "chi": "刮風", "icon": "💨", "source": "Standard", "morph": "Mi-Fali"},
+    {"amis": "Mafali", "chi": "刮風", "icon": "💨", "source": "User Fix", "morph": "Ma-Fali"}, # 修正
     {"amis": "Heca", "chi": "年 / 歲 (詞根)", "icon": "🎂", "source": "Root", "morph": "Root"},
     {"amis": "Mihecaan", "chi": "年份 / 歲數", "icon": "🗓️", "source": "Row 321", "morph": "Mi-Heca-an"},
     {"amis": "Anini", "chi": "今天 / 現在", "icon": "👇", "source": "Row 1690", "morph": "Time"},
@@ -90,8 +90,8 @@ vocab_data = [
     {"amis": "Nacila", "chi": "昨天", "icon": "⏪", "source": "Row 321", "morph": "Na-Cila (Past)"},
     {"amis": "Anocila", "chi": "明天", "icon": "⏩", "source": "Row 485", "morph": "Ano-Cila (Fut)"},
     {"amis": "Toki", "chi": "時間 / 鐘錶", "icon": "⌚", "source": "Row 676", "morph": "Loan"},
-    {"amis": "Fulad", "chi": "月亮 / 月份", "icon": "🌙", "source": "Standard", "morph": "Noun"},
-    {"amis": "Sananal", "chi": "早晨", "icon": "🌅", "source": "Standard", "morph": "Time"},
+    {"amis": "Folad", "chi": "月亮 / 月份", "icon": "🌙", "source": "User Fix", "morph": "Noun"}, # 修正
+    {"amis": "Papacem", "chi": "早晨", "icon": "🌅", "source": "User Fix", "morph": "Time"}, # 修正
     {"amis": "Dadaya", "chi": "晚上", "icon": "🌃", "source": "Standard", "morph": "Time"},
 ]
 
@@ -100,11 +100,11 @@ sentences = [
     {"amis": "Ma'orad anini a romi'ad.", "chi": "今天是下雨天。", "icon": "🌧️", "source": "Standard Pattern"},
     {"amis": "Macidal i nacila.", "chi": "昨天是晴天。", "icon": "☀️", "source": "Standard Pattern"},
     {"amis": "Pina to ko mihecaan iso?", "chi": "你幾歲了？", "icon": "🎂", "source": "Standard Question"},
-    {"amis": "Mifali to i papotal.", "chi": "外面在颳風了。", "icon": "💨", "source": "Standard Pattern"},
+    {"amis": "Mafali to i papotal.", "chi": "外面在颳風了。", "icon": "💨", "source": "User Fix"}, # 修正
     {"amis": "Pina ko toki anini?", "chi": "現在幾點鐘？", "icon": "⌚", "source": "Row 676"},
-    {"amis": "Malikat ko fulad i dadaya.", "chi": "晚上的月亮很亮。", "icon": "🌕", "source": "Standard Pattern"},
-    {"amis": "Maromi'ad ciira a matayal.", "chi": "他工作了一整天。", "icon": "⏳", "source": "Standard Pattern"},
-    {"amis": "Anocila a tayra kako i Taypak.", "chi": "我明天要去台北。", "icon": "🚄", "source": "Standard Pattern"},
+    {"amis": "Malikat ko folad i dadaya.", "chi": "晚上的月亮很亮。", "icon": "🌕", "source": "Standard Pattern (Fix)"},
+    {"amis": "Masaromi'ad ciira a matayal.", "chi": "他工作了一整天。", "icon": "⏳", "source": "User Fix"}, # 修正
+    {"amis": "A nocila a tayra kako i Taypak.", "chi": "我明天要去台北。", "icon": "🚄", "source": "User Fix"}, # 修正
     {"amis": "Mica'edongay kako to mi'acaan no miso a riko' i nacila a miheca.", "chi": "我穿著你去年買的衣服。", "icon": "👗", "source": "Row 321"},
 ]
 
@@ -139,11 +139,11 @@ raw_quiz_pool = [
         "hint": "Na- (過去) + Cila"
     },
     {
-        "q": "Maromi'ad ciira a matayal.",
-        "audio": "Maromi'ad ciira a matayal",
+        "q": "Masaromi'ad ciira a matayal.",
+        "audio": "Masaromi'ad ciira a matayal",
         "options": ["他工作了一整天", "他不想工作", "他剛開始工作"],
         "ans": "他工作了一整天",
-        "hint": "Ma-romi'ad (度過一天/整天)"
+        "hint": "Masa-romi'ad (度過一天/整天)"
     }
 ]
 
@@ -167,7 +167,7 @@ if 'init' not in st.session_state:
 
 # --- 5. 主介面 ---
 st.markdown("<h1 style='text-align: center; color: #0277BD;'>Unit 38: O Romi'ad</h1>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center; color: #666;'>時間與天氣 (Time & Weather)</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; color: #666;'>時間與天氣 (User Corrected)</p>", unsafe_allow_html=True)
 
 tab1, tab2 = st.tabs(["📚 詞彙與句型", "🎲 隨機挑戰"])
 

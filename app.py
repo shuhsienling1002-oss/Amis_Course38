@@ -83,7 +83,7 @@ vocab_data = [
     {"amis": "Macidal", "chi": "出太陽 / 晴天", "icon": "🌤️", "source": "Standard", "morph": "Ma-Cidal"},
     {"amis": "Fali", "chi": "風 (詞根)", "icon": "🍃", "source": "Row 555", "morph": "Root"},
     {"amis": "Mafali", "chi": "刮風", "icon": "💨", "source": "User Fix", "morph": "Ma-Fali"}, # 修正
-    {"amis": "Heca", "chi": "年 / 歲 (詞根)", "icon": "🎂", "source": "Root", "morph": "Root"},
+    {"amis": "Heca", "chi": "又一次/輪回(詞根)", "icon": "🎂", "source": "Root", "morph": "Root"},
     {"amis": "Mihecaan", "chi": "年份 / 歲數", "icon": "🗓️", "source": "Row 321", "morph": "Mi-Heca-an"},
     {"amis": "Anini", "chi": "今天 / 現在", "icon": "👇", "source": "Row 1690", "morph": "Time"},
     {"amis": "Cila", "chi": "前/後一天 (詞根)", "icon": "📆", "source": "Root", "morph": "Root"},
@@ -257,3 +257,4 @@ with tab2:
             
             st.session_state.quiz_questions = final_qs
             safe_rerun()
+
